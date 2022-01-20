@@ -114,7 +114,7 @@ function AddProductForm() {
             imageURL:url
         }
         //เรียกใช้ API
-        axios.post("http://localhost:5000/api/products", param).then((response)=>{
+        axios.post("https://product-api-001.herokuapp.com/api/products", param).then((response)=>{
             console.log(response.data);
             //setProduct(initProductState);
             setSubmitted(true);
